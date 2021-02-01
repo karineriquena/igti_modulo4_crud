@@ -7,6 +7,7 @@ const studentSchema = mongoose.Schema({
   value: {
     type: Number,
     require: true,
+    // valida se a nota inserida é maior que zero
     min: 0,
   },
   lastModified: { type: Date, default: Date.now() },
